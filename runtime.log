@@ -1,0 +1,64 @@
+
+Run Datetime: 2021-12-10 06:00:02.930032
+---------------------
+Project SID match FA.
+---------------------
+
+Latest Device list file.
+/home/jcm/mnt/SID/Device List Report - ALL 20211210.xlsx
+Moving file to local directory for processing...
+/home/jcm/projects/SIDxFARanInventory/LocalFiles/Device List Report - ALL 20211210.xlsx
+
+Latest Cell list file.
+/home/jcm/mnt/SID/List Report - CELL 20211210.xlsx
+Moving file to local directory for processing...
+/home/jcm/projects/SIDxFARanInventory/LocalFiles/List Report - CELL 20211210.xlsx
+
+Latest Device list file.
+/home/jcm/mnt/RAN/RAN_DEVICE_20211210.csv
+Moving file to local directory for processing...
+/home/jcm/projects/SIDxFARanInventory/LocalFiles/RAN_DEVICE_20211210.csv
+
+Latest Cell list file.
+/home/jcm/mnt/RAN/RAN_CELL_20211210.csv
+Moving file to local directory for processing...
+/home/jcm/projects/SIDxFARanInventory/LocalFiles/RAN_CELL_20211210.csv
+
+Get SID NEs to Pandas dataframe...
+SID NEs successfully stored in dataframe.
+
+Connecting to NOC-FA Site Database...[OK]
+Get NOC-FA NEs to Pandas dataframe...
+Smart NEs successfully stored in dataframe.
+
+Get records in NOC-FA and not in SID...
+Variance (In NOCFA not in SID) rows dataframe size: 1137
+
+Get RAN CELL data for records in NOC-FA and not in SID...
+Writing dataframe to file...[File saved]
+
+Record count of variance: 257
+
+Get match records from SID and NOC-FA...
+
+Saving final cell list file...
+Writing dataframe to file...[File saved]
+
+Get Variance of SID RAN Devices and Cell list devices to Pandas dataframe...
+Count variance from SID: 4884
+Getting NE Owner of devices with blank values.
+Connecting to NOCFA database...[OK]
+Count of variance that matched in NMS Device: 4957
+Number of missing variance in NMS Device: 2
+Writing dataframe to file...[File saved]
+
+Get SID RAN Devices to Pandas dataframe...
+SID RAN devices count: 35885
+Getting NE Owner of devices with blank values.
+Connecting to NOCFA database...[OK]
+Match count: 35670
+Get all non RAN mobile devices...
+Writing dataframe to file...[File saved]
+
+0:25:29.075161
+<<<<< End of Script >>>>>
